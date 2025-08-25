@@ -3,7 +3,7 @@ import type { ProductType } from "../@types/ProductType"
 
 const ProductItem:FC<{item:ProductType}> = ({item}) => {
   return (
-    <div className="w-[300px] bg-blue-300 rounded-md overflow-hidden">
+    <div className="card w-[250px] bg-blue-200 rounded-md overflow-hidden">
     <img className="mb-2" src={item.images[0]} alt="product img" width={300} height={200}/>
     <div className="p-3">
       <h2 className="line-clamp-1 font-bold text-[20px]">{item.title}</h2>
